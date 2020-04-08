@@ -2,6 +2,6 @@ package com.bridgelabz.pattern.observer;
 
 public interface Observer {
 
-    public void onDataReceived();
-
+    void onDataReceived(Data data);
+    String getName();
 }

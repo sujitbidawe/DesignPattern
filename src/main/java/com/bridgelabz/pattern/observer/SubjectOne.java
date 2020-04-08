@@ -11,10 +11,16 @@ public class SubjectOne implements Observable{
         observerList.add(client);
     }
 
+    @Override
+    public void onAcknowledgementReceived(Observer observer) {
+        System.out.println("Acknowledgement received from " + observer.getName());
+    }
+
     public void update(Data data){
         for (Observer client : observerList) {
             client.onDataReceived(data);
         }
     }
+
 }
 
