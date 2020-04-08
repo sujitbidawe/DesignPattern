@@ -3,6 +3,7 @@ package com.bridgelabz.pattern.observer;
 public class ClientTwo extends BaseClient{
 
     public ClientTwo(Observable subject) {
+
         this.subject = subject;
     }
 
